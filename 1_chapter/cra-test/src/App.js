@@ -3,11 +3,13 @@ import logo from "./logo.svg";
 import "./App.css";
 import smallImage from "./small.jpeg";
 import bigImage from "./big.jpeg";
+import TodoList from "./TodoList";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <TodoList />
         <img src={smallImage} alt="small" />
         <img src={bigImage} alt="big" />
         <img src={logo} className="App-logo" alt="logo" />
