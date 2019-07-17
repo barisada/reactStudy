@@ -1,26 +1,37 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import Button from "./Button1";
+import Button2 from "./Button2";
+import Button3 from "./Button3";
+import Box from "./Box1";
+import Box2 from "./Box2";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <>
+        <div>
+          <h3>쌩 css - (이름 충돌)</h3>
+          <Button size="big" />
+          <Button size="small" />
+          <Box size="big" />
+          <Box size="small" />
+        </div>
+        <hr />
+        <div>
+          <h3>css-module</h3>
+          <Button2 size="big" />
+          <Button2 size="small" />
+        </div>
+        <hr />
+        <div>
+          <h3>classnames 모듈(?)</h3>
+          <Button3 size="big" />
+          <Button3 size="small" />
+          <Box2 size="big" />
+          <Box2 size="small" />
+        </div>
+      </>
+    );
+  }
 }
-
 export default App;
