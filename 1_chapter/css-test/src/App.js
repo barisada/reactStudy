@@ -6,6 +6,8 @@ import Button4 from "./Button4";
 import Box from "./Box1";
 import Box2 from "./Box2";
 import Box3 from "./Box3";
+import Box4 from "./Box4";
+import Box5 from "./Box5";
 
 class App extends Component {
   render() {
@@ -39,6 +41,18 @@ class App extends Component {
           <Button4 size="small" />
           <Box3 size="big" />
           <Box3 size="small" />
+        </div>
+        <hr />
+        <div>
+          <h3>css-in-js (비 동적 박스생성)</h3>
+          <Box4 size="big" />
+          <Box4 size="small" />
+        </div>
+        <hr />
+        <div>
+          <h3>css-in-js (동적 박스생성)</h3>
+          <Box5 size="big" />
+          <Box5 size="small" />
         </div>
       </>
     );
