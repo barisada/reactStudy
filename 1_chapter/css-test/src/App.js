@@ -2,8 +2,10 @@ import React, { Component } from "react";
 import Button from "./Button1";
 import Button2 from "./Button2";
 import Button3 from "./Button3";
+import Button4 from "./Button4";
 import Box from "./Box1";
 import Box2 from "./Box2";
+import Box3 from "./Box3";
 
 class App extends Component {
   render() {
@@ -29,6 +31,14 @@ class App extends Component {
           <Button3 size="small" />
           <Box2 size="big" />
           <Box2 size="small" />
+        </div>
+        <hr />
+        <div>
+          <h3>Sass</h3>
+          <Button4 size="big" />
+          <Button4 size="small" />
+          <Box3 size="big" />
+          <Box3 size="small" />
         </div>
       </>
     );
