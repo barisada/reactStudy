@@ -6,6 +6,8 @@ import * as serviceWorker from "./serviceWorker";
 import { Route, Link, BrowserRouter as Router } from "react-router-dom";
 import StateCounter from "./3_1_state_ex/StateCounter";
 import StateDoubleCounter from "./3_1_state_ex/StateDoubleCounter";
+import ConstructorEx from "./3_3_lifecycle_method/Constructor_method";
+import DerivedStateFromProps from "./3_3_lifecycle_method/DerivedStateFromProps";
 
 const routing = (
   <Router>
@@ -21,10 +23,23 @@ const routing = (
           <li>
             <Link to="/StateEx2">State Double Counter</Link>
           </li>
+          <li>
+            <Link to="/ConstructorEx1">3.3.1 Constructor example</Link>
+          </li>
+          <li>
+            <Link to="/getDerivedStateFromProps">
+              3.3.2 getDerivedStateFromProps example
+            </Link>
+          </li>
         </ul>
         <Route exact path="/" component={App} />
         <Route path="/stateEx1" component={StateCounter} />
         <Route path="/StateEx2" component={StateDoubleCounter} />
+        <Route path="/ConstructorEx1" component={ConstructorEx} />
+        <Route
+          path="/getDerivedStateFromProps"
+          component={DerivedStateFromProps}
+        />
       </div>
     </div>
   </Router>
