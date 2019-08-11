@@ -28,6 +28,5 @@ class Example extends React.Component {
 
 function Example2({ title }) {
   const domNode = document.getElementById("root");
-
   return ReactDOM.createPortal(<div>{title}</div>, domNode);
 }

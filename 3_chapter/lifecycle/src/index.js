@@ -9,6 +9,7 @@ import StateDoubleCounter from "./3_1_state_ex/StateDoubleCounter";
 import ConstructorEx from "./3_3_lifecycle_method/Constructor_method";
 import DerivedStateFromProps from "./3_3_lifecycle_method/DerivedStateFromProps";
 import RenderEx from "./3_3_lifecycle_method/RenderEx";
+import MountExample from "./3_3_lifecycle_method/ComponentMountEx";
 
 const routing = (
   <Router>
@@ -35,6 +36,9 @@ const routing = (
           <li>
             <Link to="/renderEx">3.3.3 Render Example </Link>
           </li>
+          <li>
+            <Link to="/mountEx">3.3.4 ComponentDidMount Example </Link>
+          </li>
         </ul>
         <Route exact path="/" component={App} />
         <Route path="/stateEx1" component={StateCounter} />
@@ -45,6 +49,7 @@ const routing = (
           component={DerivedStateFromProps}
         />
         <Route path="/renderEx" component={RenderEx} />
+        <Route path="/mountEx" component={MountExample} />
       </div>
     </div>
   </Router>
