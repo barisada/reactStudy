@@ -10,6 +10,7 @@ import ConstructorEx from "./3_3_lifecycle_method/Constructor_method";
 import DerivedStateFromProps from "./3_3_lifecycle_method/DerivedStateFromProps";
 import RenderEx from "./3_3_lifecycle_method/RenderEx";
 import MountExample from "./3_3_lifecycle_method/ComponentMountEx";
+import ShouldCompUpdateEx from "./3_3_lifecycle_method/ShouldCompUpdateEx";
 
 const routing = (
   <Router>
@@ -39,6 +40,11 @@ const routing = (
           <li>
             <Link to="/mountEx">3.3.4 ComponentDidMount Example </Link>
           </li>
+          <li>
+            <Link to="/shouldCompUpdateEx">
+              3.3.5 shouldComponentUpdate Example{" "}
+            </Link>
+          </li>
         </ul>
         <Route exact path="/" component={App} />
         <Route path="/stateEx1" component={StateCounter} />
@@ -50,6 +56,7 @@ const routing = (
         />
         <Route path="/renderEx" component={RenderEx} />
         <Route path="/mountEx" component={MountExample} />
+        <Route path="/shouldCompUpdateEx" component={ShouldCompUpdateEx} />
       </div>
     </div>
   </Router>
